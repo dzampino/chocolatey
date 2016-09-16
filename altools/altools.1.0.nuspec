@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>altools</id>
         <version>1.0</version>
-        <title>ALTools</title>
+        <title>Account Lockout and Management Tools</title>
         <authors>Microsoft</authors>
         <owners>David Zampino</owners>
         <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=18465</projectUrl>
         <iconUrl>https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxCkJGxsrH9Ngefsana4WiTZoff-xKNxcL7smmKTlgw1GuSfY5_noQFw</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Download tools that you can use to troubleshoot account lockouts, as well as add functionality to Active Directory.</description>
-        <releaseNotes>ALTools.exe contains tools that assist you in managing accounts and in troubleshooting account lockouts. Use these tools in conjunction with the Account Passwords and Policies white paper.
+        <description>ALTools.exe contains tools that assist you in managing accounts and in troubleshooting account lockouts. Use these tools in conjunction with the Account Passwords and Policies white paper.
 
 ALTools.exe includes:
 
@@ -27,8 +26,13 @@ EventCombMT.exe. Gathers specific events from event logs of several different ma
 
 LockoutStatus.exe. Determines all the domain controllers that are involved in a lockout of a user in order to assist in gathering the logs. LockoutStatus.exe uses the NLParse.exe tool to parse Netlogon logs for specific Netlogon return status codes. It directs the output to a comma-separated value (.csv) file that you can sort further, if needed.
 
-NLParse.exe. Used to extract and display desired entries from the Netlogon log files.</releaseNotes>
+NLParse.exe. Used to extract and display desired entries from the Netlogon log files.</description>
+        <summary>Download tools that you can use to troubleshoot account lockouts, as well as add functionality to Active Directory.</summary>
+        <releaseNotes />
         <language>en-US</language>
         <tags>altools password account lockout</tags>
     </metadata>
+    <files>
+        <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
+    </files>
 </package>
